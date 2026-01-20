@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="container">
+		<div class="form-content">
+			<h1 id="title">SpACH LOGIN</h1>
+			<p id="titleWillkomen">Willkommen! Bitte melde dich an, um zu starten</p>
+			<div class="logo">
+            <a href="chess.html">
+                <img src="img/logo11.png" alt="SpACH">
+            </a>
+			<form>
+				<div class="input-group">
+					<div class=" input-field" id="nameInput">
+						<i class = "fa-solid fa-user"></i>
+						<input type="text" placeholder="Benutzername">
+					</div>
+					<div class=" input-field">
+						<i class = "fa-solid fa-envelope"></i>
+						<input type="email" placeholder="e-mail">
+					</div>
+					<div class=" input-field">
+						<i class = "fa-solid fa-lock"></i>
+						<input type="password" placeholder="Password">
+					</div>
+					<p>Hast du deine Password vergessen?<a href="#">click hier</a></p>
+				</div>
+				<div class="btn-field">
+					<button id="signUp" type="button" class="disable">Registrieren</button>
+					<button id="signIn" type="button">Einloggen</button>
+					<button id="guestPlayer" type="button">Gast spielen</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>

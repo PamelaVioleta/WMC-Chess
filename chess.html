@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/styleChess.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="chess.html">
+                <img src="img/logo22.png" alt="SpACH">
+            </a>
+        </div>
+        <ul class="nav-links" id="navMenu">
+            <li><a href="#">Regeln</a></li>
+            <li><a href="#">Spielprotokoll</a></li>
+            <li><a href="#">Zum Start</a></li> 
+        </ul>
+    
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </nav>
+    <div class="containerChess">
+        <div class="board">
+            <div class="row" id="row8">
+                <div class="box" id="b81">Bbrook</div>
+                <div class="box" id="b82">Bknight</div>
+                <div class="box" id="b83">Bbishop</div>
+                <div class="box" id="b84">Bqueen</div>
+                <div class="box" id="b85">Bking</div>
+                <div class="box" id="b86">Bbishop</div>
+                <div class="box" id="b87">Bknight</div>
+                <div class="box" id="b88">Bbrook</div>
+            </div>
+            <div class="row" id="row7">
+                <div class="box" id="b71">Bpawn</div>
+                <div class="box" id="b72">Bpawn</div>
+                <div class="box" id="b73">Bpawn</div>
+                <div class="box" id="b74">Bpawn</div>
+                <div class="box" id="b75">Bpawn</div>
+                <div class="box" id="b76">Bpawn</div>
+                <div class="box" id="b77">Bpawn</div>
+                <div class="box" id="b78">Bpawn</div>
+            </div>
+            <div class="row" id="row6">
+                <div class="box" id="b61"></div>
+                <div class="box" id="b62"></div>
+                <div class="box" id="b63"></div>
+                <div class="box" id="b64"></div>
+                <div class="box" id="b65"></div>
+                <div class="box" id="b66"></div>
+                <div class="box" id="b67"></div>
+                <div class="box" id="b68"></div>
+            </div>
+            <div class="row" id="row5">
+                <div class="box" id="b51"></div>
+                <div class="box" id="b52"></div>
+                <div class="box" id="b53"></div>
+                <div class="box" id="b54"></div>
+                <div class="box" id="b55"></div>
+                <div class="box" id="b56"></div>
+                <div class="box" id="b57"></div>
+                <div class="box" id="b58"></div>
+            </div>
+            <div class="row" id="row4">
+                <div class="box" id="b41"></div>
+                <div class="box" id="b42"></div>
+                <div class="box" id="b43"></div>
+                <div class="box" id="b44"></div>
+                <div class="box" id="b45"></div>
+                <div class="box" id="b46"></div>
+                <div class="box" id="b47"></div>
+                <div class="box" id="b48"></div>
+            </div>
+            <div class="row" id="row3">
+                <div class="box" id="b31"></div>
+                <div class="box" id="b32"></div>
+                <div class="box" id="b33"></div>
+                <div class="box" id="b34"></div>
+                <div class="box" id="b35"></div>
+                <div class="box" id="b36"></div>
+                <div class="box" id="b37"></div>
+                <div class="box" id="b38"></div>
+            </div>
+            <div class="row" id="row2">
+                <div class="box" id="b21">Wpawn</div>
+                <div class="box" id="b22">Wpawn</div>
+                <div class="box" id="b23">Wpawn</div>
+                <div class="box" id="b24">Wpawn</div>
+                <div class="box" id="b25">Wpawn</div>
+                <div class="box" id="b26">Wpawn</div>
+                <div class="box" id="b27">Wpawn</div>
+                <div class="box" id="b28">Wpawn</div>
+            </div>
+            <div class="row" id="row1">
+                <div class="box" id="b11">Wbrook</div>
+                <div class="box" id="b12">Wknight</div>
+                <div class="box" id="b13">Wbishop</div>
+                <div class="box" id="b14">Wqueen</div>
+                <div class="box" id="b15">Wking</div>
+                <div class="box" id="b16">Wbishop</div>
+                <div class="box" id="b17">Wknight</div>
+                <div class="box" id="b18">Wbrook</div>
+            </div>  
+        </div>
+        <div class ="sidebar">
+            <div class="panel">
+                <div class="dice">🎲</div>
+                <h2>0</h2>
+            </div>
+            <div class="panel">
+                <p>Ritter</p>
+                <p>⚔️</p>
+            </div>
+            <div class="panel">
+                <p>Spieler:</p>
+                <p id="Zug">....</p>
+            </div>
+            <div class="panel">
+                <p>Ritterfang</p>
+            </div>
+            <div class="panel">
+                <p>Geschlagene Figuren</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/scriptChess.js"></script>
+</body>
+</html>

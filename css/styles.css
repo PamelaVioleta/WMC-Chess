@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*========Loging=========*/
+.container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #D0D0D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-content {
+    width: 100%;
+    max-width: 450px;
+    background-color: #2C2F35;
+    padding: 50px 50px 50px;
+    text-align: center;
+    border-radius: 25px;
+}
+.form-content h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.form-content .logo img {
+    width: 100px;
+    height: auto;
+}
+.form-content p {
+    color: #FFFFFF;
+}
+
+.form-content h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #04BD7D;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input-field {
+    background-color: #515966;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    /*justify-content: flex-start;*/
+    transition: max-height 0.5s;
+    overflow: hidden;
+    
+}
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none ;
+    padding: 18px 15px;
+    color: #FFFFFF;
+}
+input:focus {
+    border-bottom: 2px solid #FFA500; 
+}
+input::placeholder {
+    color: #FFFFFF;
+}
+.input-field i {
+    margin-left: 15px; 
+    color: #04BD7D;
+}
+
+form p {
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    color:#04BD7D;
+    margin-left: 5px;
+}
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.btn-field button {
+    flex-basis: 32%;
+    font-size: 14px;
+    background-color: #04BD7D;
+    color: #FFFFFF;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+
+.btn-field button.disable {
+    background-color: #EAEAEA;
+    color: #2C2F35;
+}
+.input-group {
+    height: 250px;
+}
