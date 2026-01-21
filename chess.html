@@ -15,7 +15,7 @@
         </div>
         <ul class="nav-links" id="navMenu">
             <li><a href="#">Regeln</a></li>
-            <li><a href="#">Spielprotokoll</a></li>
+            <li><a href="protokoll.html">Spielprotokoll</a></li>
             <li><a href="#">Zum Start</a></li> 
         </ul>
     
@@ -25,7 +25,21 @@
         <span></span>
     </div>
     </nav>
+    
     <div class="containerChess">
+           <div class ="sidebar">
+           
+            <div class="panel">
+                <p>Spieler:</p>
+                <p id="Zug">....</p>
+            </div>
+            <div class="panel">
+                <p>Ritterfang</p>
+            </div>
+            <div class="panel">
+                <p>Geschlagene Figuren</p>
+            </div>
+        </div>
         <div class="board">
             <div class="row" id="row8">
                 <div class="box" id="b81">Bbrook</div>
@@ -110,23 +124,19 @@
         </div>
         <div class ="sidebar">
             <div class="panel">
-                <div class="dice">🎲</div>
-                <h2>0</h2>
+                <div class="dice" id="dice">&#9860;</div>
+                <button id="roll-button">Roll Dice</button>
+                <div id="roll-history-container">
+                    <ul id="roll-history">
+                        
+                    </ul>
+                </div>
             </div>
             <div class="panel">
                 <p>Ritter</p>
                 <p>⚔️</p>
             </div>
-            <div class="panel">
-                <p>Spieler:</p>
-                <p id="Zug">....</p>
-            </div>
-            <div class="panel">
-                <p>Ritterfang</p>
-            </div>
-            <div class="panel">
-                <p>Geschlagene Figuren</p>
-            </div>
+            
         </div>
     </div>
     <script src="js/scriptChess.js"></script>

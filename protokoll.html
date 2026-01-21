@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/styleChess.css">
+    <link rel="stylesheet" href="css/styleProtokoll.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="chess.html">
+                <img src="img/logo22.png" alt="SpACH">
+            </a>
+        </div>
+        <ul class="nav-links" id="navMenu">
+            <li><a href="#">Regeln</a></li>
+            <li><a href="#">Spielprotokoll</a></li>
+            <li><a href="chess.html">Spiel</a></li> 
+        </ul>
+    
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </nav>
+    <div class="containerProtokoll">
+        <h1>SpAch Protokoll</h1>
+        <h2>Wählen Sie die Runde...</h2>
+        <div class="formProtokoll">
+            <div claa="selectProtokoll">
+                <label for="runde">Runde:</label>
+                <select id="runde" name="runde">
+                    <option>-- auswälen --</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <label>Würfelwurd:</label>
+            <label>Weiß zieht:</label>
+            <label>Schwarz zieht:</label>
+            <label>Ritter prüft:</label>
+        </div>
+
+    </div>
+</body>
+</html>

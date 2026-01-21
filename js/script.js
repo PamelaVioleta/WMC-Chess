@@ -20,3 +20,7 @@ signUp.onclick = function() {
     signIn.classList.add("disable");
 }
 
+document.getElementById("guestPlayer").addEventListener("click", () => {
+    window.location.href = "chess.html";
+});
+
